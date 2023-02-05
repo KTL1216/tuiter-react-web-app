@@ -1,0 +1,85 @@
+.wd-header {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    border-bottom: 1px solid rgb(47, 51, 54);
+}
+.wd-header-title {
+    color: white;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+.wd-header-user {
+    color: gray;
+    font-size: 13px;
+}
+.wd-tuits {
+    padding-top: 12px;
+}
+.wd-profile-pic {
+    float: left;
+    padding-left: 16px;
+}
+.wd-content {
+    float: left;
+    padding-left: 12px;
+    color: white;
+}
+.wd-tuit-user {
+    font-size: 15px;
+    color: gray;
+}
+.wd-main-content {
+    color: white;
+    font-size: 15px;
+    width: 506px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.wd-tuit-text {
+    border: 1px solid rgb(47, 51, 54);
+    border-radius: 0px 0px 10px 10px;
+    color: gray;
+    font-size: 15px;
+    width: 504px;
+    border-top: 0px;
+}
+
+.wd-text-content {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.wd-interaction {
+    padding-top: 12px;
+}
+.wd-pair {
+    float: left;
+    width: 25%;
+}
+.wd-icon {
+    float: left;
+    padding-left: 5px;
+    padding-right: 12px;
+    height: 15px;
+    width: 15px;
+}
+.wd-number-normal {
+    float: left;
+    font-size: 15px;
+    color: gray;
+}
+.wd-number-red {
+    float: left;
+    color: red;
+}
+
+.wd-bolded { 
+    font-weight: bold; 
+    color: white;
+}
+#classroom {
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid rgb(47, 51, 54);
+    border-bottom: 0px;
+}

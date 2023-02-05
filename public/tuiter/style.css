@@ -1,0 +1,23 @@
+.wd-overlay {
+    background: black;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+.wd-left-col {
+    width: 5%;
+    float: left;
+    border-right: 1px solid rgb(47, 51, 54);
+    height: 100%
+}
+.wd-mid-col {
+    width: 5%;
+    float: left;
+}
+.wd-right-col {
+    padding-left: 10px;
+    width: 90%;
+    float: left;
+}
