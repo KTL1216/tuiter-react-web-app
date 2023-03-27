@@ -1,32 +1,20 @@
 [
   {
     "_id": 123,
-    "avatarIcon": "java.svg",
-    "userName": "Java",
-    "handle": "Java"
+    "userName": "NASA",
+    "handle": "NASA",
+    "avatarIcon": "nasa.jpg"
   },
   {
     "_id": 234,
-    "avatarIcon": "relativity.jpg",
-    "userName": "Relativity Space",
-    "handle": "relativityspace"
+    "userName": "Tesla",
+    "handle": "tesla",
+    "avatarIcon": "tesla.jpg"
   },
   {
     "_id": 345,
-    "avatarIcon": "virgin.svg",
-    "userName": "Virgin Galactic",
-    "handle": "virgingalactic"
-  },
-  {
-    "_id": 456,
-    "avatarIcon": "nasa.jpg",
-    "userName": "NASA",
-    "handle": "NASA"
-  },
-  {
-    "_id": 567,
-    "avatarIcon": "tesla.jpg",
-    "userName": "Tesla",
-    "handle": "Tesla"
+    "userName": "SpaceX",
+    "handle": "SpaceX",
+    "avatarIcon": "spacex-logo.jpg"
   }
 ]
