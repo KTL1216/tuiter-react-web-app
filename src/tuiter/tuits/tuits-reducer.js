@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import tuits from './tuits.json';
+import tuits from './data/tuits.json';
 
 const currentUser = {
     "userName": "NASA",
@@ -24,12 +24,16 @@ const tuitsSlice = createSlice(
         initialState: tuits,
         reducers: {
             createTuit(state, action) {
+                // add createTuit reducer function which appends the new tuit in the payload at the beginning of the
+                // array of tuits contained in the state.
                 state.unshift({
                     ...action.payload,
                     ...templateTuit,
                     _id: (new Date()).getTime(),
                 })
             },
+            // reducer function to delete tuit looks up index of tuit from state comparing each tuit's ID
+            // with action's payload, then splices tuit from state
             deleteTuit(state, action) {
                 const index = state.findIndex(tuit => tuit._id === action.payload);
                 state.splice(index, 1);

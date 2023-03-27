@@ -1,9 +1,9 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import TuitsStats from "./tuits-stats";
+import TuitsNums from "./tuits-nums";
 import {useDispatch} from "react-redux";
 import {deleteTuit} from "../tuits/tuits-reducer";
 
-const TuitsListItem = (
+const TuitItem = (
     {
         tuit = {
             _id: 234,
@@ -29,24 +29,29 @@ const TuitsListItem = (
     return(
         <div className="list-group-item pt-3 wd-post-list-item border-1">
             <div className="row">
+                {/* Left Avatar */}
                 <div className="col-auto">
                     <img src={`/images/${tuit.image}`} className="rounded-circle" width="48px" alt="avatar"/>
                 </div>
+                {/* Right Content */}
                 <div className="col-10">
+                    {/* User's name handle and post time */}
                     <div>
                         <i className="bi bi-x-lg float-end" onClick={() => deleteTuitHandler(tuit._id)} />
                         <span className="fw-bolder">{tuit.userName}{' '}</span>
                         <FontAwesomeIcon icon="fa-solid fa-circle-check" className="text-primary"/>
                         <span className="text-secondary">{' '}{tuit.handle} {'\u00B7'} {tuit.time}</span>
                     </div>
+                    {/* Tuit */}
                     <div className="mb-4">
                         {tuit.tuit}
                     </div>
-                    <TuitsStats tuit={tuit}/>
+                    {/* Bottom Icons */}
+                    <TuitsNums tuit={tuit}/>
                 </div>
             </div>
         </div>
     )
 }
 
-export default TuitsListItem;
+export default TuitItem;

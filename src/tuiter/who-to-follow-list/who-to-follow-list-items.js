@@ -1,4 +1,5 @@
 import React from "react";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const WhoToFollowListItem = (
     {
@@ -14,6 +15,7 @@ const WhoToFollowListItem = (
                 <div className="col-lg-8 col-xl-8 col-xxl-8 text-nowrap">
                     <div className="fw-bold">
                         {who.userName}{' '}
+                        <FontAwesomeIcon icon="fa-solid, fa-circle-check"/>
                     </div>
                     <div>@{who.handle}</div>
                 </div>
